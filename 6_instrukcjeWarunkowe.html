@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Instrukcje warunkowe</title>
+</head>
+<body>
+    <script>
+        var imie=prompt("Podaj imię: 1-Sandra lub 2-Maciej", " ");
+        if ((imie==1|imie=="Sandra")){
+            document.write("Sandra");
+        }
+        else if ((imie==2|imie=="Maciej")) {
+            document.write("Maciej");
+        }
+        else {
+            document.write("Podałeś nieprawidłową wartość!");
+        }
+    </script>
+    <hr>
+    <script>
+        var kolor=prompt("Wybierz kolor: 1-szary lub 2-różowy","");
+        if ((kolor==1|kolor=="szary")){
+            document.write("<font color=grey>Szary to piękny kolor!</font>");
+        }
+        else if ((kolor==2|kolor=="różowy")) {
+            document.write("<font color=pink>Różowy to piękny kolor</font>");
+        }
+        else {
+            document.write("Nie umiesz się bawić :(");
+        }
+    </script>
+    <hr>
+    <script>
+        var x = prompt("Podaj liczbę","");
+        var x = (x%2==0)?"parzysta":"nieparzysta";
+        document.write("<b>X</b> to liczba " +x);
+    </script>
+</body>
+</html>
