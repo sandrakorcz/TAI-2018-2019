@@ -5,7 +5,7 @@
     <title>Instrukcje warunkowe</title>
 </head>
 <body>
-    <script>
+<!--    <script>
         var imie=prompt("Podaj imię: 1-Sandra lub 2-Maciej", " ");
         if ((imie==1|imie=="Sandra")){
             document.write("Sandra");
@@ -35,6 +35,28 @@
         var x = prompt("Podaj liczbę","");
         var x = (x%2==0)?"parzysta":"nieparzysta";
         document.write("<b>X</b> to liczba " +x);
+    </script>-->
+    <hr>
+    <script>
+        var x=prompt("Podaj liczbę"," ");
+        if (x<100 & x%4==0) {
+            document.write("Liczba jest mniejsza od 100 i podzielna przez 4.");
+        }
+        else if (x<100 & x%4) {
+            document.write("Liczba jest mniejsza od 100, ale nie podzielna przez 4.");
+        }
+        else if (x>100 & x%4==0){
+            document.write("Liczba nie jest mniejsza od 100, ale jest podzielna przez 4.");
+        }
+        else if (x=100){
+            document.write("Podana wartość jest równa 100 i jest podzielna przez 4.");
+        }
+        else if (x>100 & x%4) {
+            document.write("PODANA WARTOŚC JEST BŁĘDNA!!!");
+        }
+        else {
+            document.write("Błędna wartość.")
+        }
     </script>
 </body>
 </html>
