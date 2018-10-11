@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Obiekty</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function auto(marka,rok,cena,wlasciciel) {
+            this.marka=marka
+            this.rok=rok
+            this.cena=cena
+            this.wlasciciel=wlasciciel
+        }
+        
+        function osoba(imie,nazwisko) {
+            this.nazwisko=nazwisko
+            this.imie=imie
+        }
+        
+        posiadacz=new osoba("Jan","Kowalski")
+        bryka=new auto("Ferrari",2003,200000,posiadacz)
+        document.write("Marka: "+bryka.marka+"rocznik: "+bryka.rok+" cena: "+bryka.cena)
+        document.write("<br>Wlasciciel: "+bryka.wlasciciel.imie+" "+bryka.wlasciciel.nazwisko)
+    </script>
+<hr>
+    <script type="text/javascript">
+        function osoba1(imie,nazwisko) {
+            this.imie=imie
+            this.nazwisko=nazwisko
+        }
+        
+        function szkola(nazwa,klasa,profil) {
+            this.nazwa=nazwa
+            this.klasa=klasa
+            this.profil=profil
+        }
+        
+        uczen=new osoba("Sandra","Korcz")
+        kierunek=new szkola("ZS1 Swarzędz","3 TE/TI","Informatyk")
+        document.write("Imię: "+uczen.imie+" Nazwisko: "+uczen.nazwisko)
+        document.write("<br>Szkoła: "+kierunek.nazwa+" Klasa: "+kierunek.klasa+" Profil: "+kierunek.profil)
+    </script>
+</body>
+</html>
