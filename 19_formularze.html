@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularze</title>
+<!--<script type="text/javascript">
+        function logowanie(formularz) {
+            if (formularz.login.value=="Sandra"&formularz.pass.value=="Korcz")
+            window.location.replace("https://www.wp.pl");
+            else {
+                alert("Podałeś błedne dane!");
+            }
+        }
+    </script>-->
+<!--<script type="text/javascript">
+        function licz(formularz) {
+            if (formularz.a.value==" "|formularz.b.value==" ");
+            else {
+                a=formularz.a.value;
+                b=formularz.b.value;
+                formularz.p.value=a*b;
+                formularz.o.value=2*a+2*b;
+            }
+        }
+    </script>-->
+    <script language="JavaScript">
+        function test1(form) {
+            if (form.text1.value==" ");
+            alert("Podaj ciąg znaków!");
+            else {
+                alert("Cześć "+form.text1.value+"! Informacja poprawna!");
+            }
+        }
+        function test2(form) {
+            if (form.text2.value==" " ||
+               form.text2.value.indexOff('@',0)==-1);
+            alert("Niepoprawny adres poczty elektronicznej!");
+            else alert("OK!");
+        }
+    </script>
+</head>
+<body>
+<!--    <form name="formularz1">
+        Login: <input type="text" name="login"><br><br>
+        Hasło: <input type="password" name="pass"><br><br>
+        <input type="button" value="Logowanie..." onClick="logowanie(this.form)">
+    </form>-->
+<!--<form name="formularz1" action="">
+        Podaj bok a: <input type="text" name="a"><br><br>
+        Podaj bok b: <input type="text" name="b"><br><br>
+        <input type="button" value="Oblicz" onClick="licz(this.form)"><br><br>
+        Wynik: <br><br>
+        Pole prostokąta: <input type="text" name="p"><br><br>
+        Obwód prostokąta: <input type="text" name="o">
+    </form>-->
+    <form name="first">
+        Wpisz swoje nazwisko: <br>
+        <input type="text" name="text1">
+        <input type="button" name="button1" value="Test" onClick="test1(this.form)"><br>
+        Wpisz adres swojej poczty elektronicznej: <br>
+        <input type="text" name="text2">
+        <input type="button" name="button2" value="Test" onClick="test2(this.form)">
+    </form>
+</body>
+</html>
