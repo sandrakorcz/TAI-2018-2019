@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Zadania 28.11.2018</title>
+
+    <script type="text/javascript">
+        function size() {
+          /*if (document.getElementById("tekst").onMouseOver==true) {*/
+              var wielkosc = document.getElementById("tekst");
+            wielkosc.style.fontSize="50px";
+/*            } else {
+               wielkosc.style.fontSize="16px";
+            }*/
+        }
+
+    </script>
+
 </head>
 <body onmousedown="getEventType(event)">
     <script type="text/javascript">
-        function dzieki (zdarzenie)
+        function dzieki()
         {
             alert("Dzięki!")
         }
     </script>
-    <script type="text/javascript">
-        function powiekszenie() {
-
-        }
-    </script>
     <p onClick="dzieki(event)">Kliknij tekst!</p>
     <hr>
-    <p onmouseover="powiekszenie(event)" id="tekst">najedź na ten tekst i zobacz jak się powieksza.</p>
+    <p onMouseOver="size()" id="tekst">Najedź na ten tekst i zobacz jak się powiększa.</p>
 </body>
 </html>
