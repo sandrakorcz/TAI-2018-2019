@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pozycja kursora itp</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function wspolrzedne_kursora(event) //funkcja, która odczytuje współrzędne
+        {
+            var x=event.clientX//właściwość, która zwraca współrzędną poziomą
+            var y=event.clientY //właściwość, która zwraca współrzędną poziomą
+            alert("Współrzędna X: " +x+ ", współrzędna Y: " +y)
+        }
+    </script>
+    <p onmousedown="wspolrzedne_kursora(event)">Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.</p>
+    <hr>
+    <script type="text/javascript">
+        document.write("Chcesz mi coś powiedzieć?");
+    </script>
+    <h1 onmouseenter="this.innerHTML='Wszyscy maja swoja rację'">Przesuń kursor nad napis.</h1>
+    <hr>
+    <script type="text/javascript">
+        function funkcja() {
+            var x=document.getElementById("znak");
+            x.value=x.value.toUpperCase();
+        }
+    </script>
+    Wpisz swoje imię: <input type="text" id="znak" onkeypress="funkcja()">
+    <hr>
+    <h1>Poniżej jest prostokąt</h1>
+    <script type="text/javascript">
+        function mysz_nad(obj) {
+            obj.innerHTML="Widzisz jakie czary?"
+        }
+        function mysz_na_zewn(obj) {
+            obj.innerHTML="Przesuń kursor nad prostokąt!"
+        }
+    </script>
+    <div onmouseover="mysz_nad(this)" onmouseout="mysz_na_zewn(this)" style="background-color: #EEEEEE;width: 200px;height: 20px;height: 20px;padding: 20px;">Przesuń kursor nad prostokąt</div>
+</body>
+</html>
