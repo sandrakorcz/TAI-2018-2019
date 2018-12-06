@@ -92,5 +92,16 @@
         document.write("Liczba 2: ",zmienna2,"<br>")
         document.write("Sprawdźmy to: Liczba 1 < Liczba 2, zatem jest to ", wynik,"<br>")
     </script>
+    <hr>
+    <script type="text/javascript">
+        var strefaczasowa = new Date()
+        var n = strefaczasowa.getTimezoneOffset(); /*metoda zwracająca różnicę czasu między UTC i czasem lokalnym*/
+        document.write("Różnica czasu wynosi ", n," minut")
+    </script>
+    <hr>
+    <script type="text/javascript">
+        var auto = {Marka:"Opel",Model:"Astra",Rocznik:"2014",Cena:"1zł"};
+        document.write(auto["Cena"]);
+    </script>
 </body>
 </html>
