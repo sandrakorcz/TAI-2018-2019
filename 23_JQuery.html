@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <button type="button" class="button" id="testAnim">Kliknij mnie</button>
+    <script type="text/javascript">
+        //$(document).ready(function(){
+           // $("button").click(function(){
+                /*$("p").hide();*/
+               // $("p").slideToggle("slow");
+           // });
+        //});
+    </script>
+    <script type="text/javascript">
+        //$(document).ready(function(){
+            //$("button").click(function(){
+                //$("*").addClass("kolorki");/*w tym miejscu tworzę nową klasę o nazwie kolorki. Selektor gwiazdki oznacza zastosowanie funkcji do wszystkich elementów na stronie.*/
+           // });
+        //});
+    </script>
+    <!--tutaj będę definiowała nową klase korolki-->
+   <!-- <style>
+        .kolorki {
+            color: beige;
+            background-color: deeppink;
+        }
+    </style>-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            /*funkcja powoduje, iz akapity (selektor p) będą znikały (.hide) po kliknięciu click(function().*/
+        $("p").click(function(){
+            $(this).hide();
+        });
+        });
+    </script>
+</head>
+<body>
+   <!-- <p>Ta treść będzie ukryta</p>
+    <button>Ukryj/pokaż treść</button>
+    <p>Kliknij przycisk i zobacz co się stanie</p>
+    <button>Kliknij mnie</button>-->
+    <p>Lista</p>
+    <p>Coś tam</p>
+    <p>Coś tam</p>
+    <p>Coś tam</p>
+    <script>
+        $("#testAnim").on('click', function(){
+            $(this).animate({
+                width:"+="+50,
+                height:"+="+10,
+                opacity:"-="+0.1,
+                duration:2000 //inny sposób deklaracji czasu trwania animacji
+            });
+        });
+    </script>
+</body>
+</html>
