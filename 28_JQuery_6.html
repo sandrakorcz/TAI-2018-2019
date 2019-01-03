@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery 6</title>
+     <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link src="https://github.com/daneden/animate.css.git">
+    <script type="text/javascript">
+        document.write("<h2>Zadanie</h2>")
+
+        $(document).ready(function(){
+//            $("p").mouseleave(function()
+//                $(this).hide()
+//                $("p").mousedown(function(){
+                $("p").mouseup(function(){
+                    alert("Bitwa pod Grunwaldem była 15 lipca 1410 roku.");
+                });
+            });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $("input").focus(function(){
+              $(this).css("background-color","yellow");
+           });
+           $("input").blur(function(){
+              $(this).css("background-color","lightgreen");
+           });
+        });
+    </script>
+</head>
+<body>
+<!--
+    <p>Najedź na ten akapit</p>
+    <p>Albo ten</p>
+    <p>Najechać na ten akapit tez możesz</p>
+    <p>I w sumie ten też</p>
+    <p>Coś się dzieje?</p>
+    <p>Ojej ten znika?</p>
+    <p>Masz pecha</p>
+-->
+<p>Kiedy odbyła się Bitwa pod Grunwaldem?</p>
+<p>Aby poznac odpowiedź kliknij na pytanie.</p>
+<hr>
+<ul>
+    <li>qwertyuiop</li>
+    <li>asdfghjkl</li>
+    <li>zxcvbnm</li>
+    <li>mnbvcxz</li>
+    <li>lkjhgfdsa</li>
+    <li>poiuytrewq</li>
+</ul>
+<script type="text/javascript">
+    $("li").hover (
+    function(){
+        $(this).append($("<I>Pisano na klawiaturze</I>"));
+    }, function(){
+        $(this).find("I:last").remove();
+    });
+</script>
+<hr>
+Login: <input type="text" name="user"><br>
+Hasło: <input type="text" name="pass"><br>
+<button>Zapisz</button>
+</body>
+</html>
