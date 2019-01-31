@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pojęcia PIISKL Sandra Korcz</title>
+    <link rel="stylesheet" href="style.css">
+     <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link src="https://github.com/daneden/animate.css.git">
+    <script>
+        alert("Uwaga! Fantastyczna strona o sieciach!");
+        alert("Na tej stonie znajduje się parę przydatnych pojęć na temat sieci komputerowych. Miłej lektury! :) ");
+    </script>
+     <script type="text/javascript">
+        $(document).ready(function(){ 
+        $("#wyswietl").click(function(){
+           $("modem").after("<p>(MOdulator DEModulator)</i> to urządzenie, które zamienia cyfrowe dane, generowane przez komputer, na sygnały analogowe i wysyła je za pomocą sieci. Podczas odbierania danych z sieci sygnały analogowe są zamieniane na cyfrowe i przekazywane do komputera. Modem może być wykorzystywany do połaczenia komputera lub sieci LAN z Internmetem za pośrednictwem stacjonarnej linii telelfonicznej lub do przesyłania danych pomiędzy sieciami LAN. Zaletą modemu jest powszechna dostępność do usługi. Modemy sa stosowane również w sieciach telewizji kablowej i telelfonii komórkowej. Między innymi modem znajduje się w routerach.</p>");
+            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>");
+            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>");
+            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>");
+            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>");
+            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>");
+            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>");
+            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>");
+            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>");
+            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>");
+            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>");
+            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>"); 
+        }); 
+        $("#usun").click(function(){
+           $("p").remove();
+        });
+            });
+    </script>
+</head>
+    
+<body>
+    <div id="baner">Pojęcia PIISKL
+       
+        <a id="powrot"></a>
+    </div>
+    
+    <div id="menu">
+      <fieldset><b>MENU</b></fieldset>
+        <a href="#siec">Sieć komputerowa</a><br>
+        <a href="#typy">Typy sieci komputerowych</a><br>
+        <a href="#urzadzenia">Urządzenia transmisji danych</a><br>
+        <a href="#protokoly">Protokoły</a><br>
+        <a href="#oprogramowanie">Oprogramowanie komunikacyjne</a><br>
+        <a href="#jednostki">Jednostki szybkości transmisji danych</a><br>
+        <a href="#modem">Modem</a><br>
+        <a href="#karta">Karta sieciowa</a><br>
+        <a href="#symbole">Symbole graficzne urządzeń sieciowych</a><br>
+        <a href="#topologia">Topologie</a><br>
+        <a href="#bibliografia">Bibliografia</a>
+
+    </div>
+    
+    <div id="tresc">
+        <div><h3><b><a id="siec">Sieć komputerowa</a></b></h3>
+    <p> <b>Sieć komputerowa</b> <i>(computer network)</i> jest systemem komunikacyjnym służacym do przesyłania danych, łaczącym co najmniej dwa komputery i urządzenia peryferyjne. Sieci komputerowe łaczą ze sobą odległe komputery. Ze względu na obszar, jaki obejmują swym zasięgiem, można je podzielić na cztery typy.</p>
+    </div>
+    
+    <div id="tabela1">
+    <caption><b><a id="typy">Typy sieci komputerowych</a></b></caption>   
+    <table>
+        <thead> <!--opisać typy sieci razem z rozwinięciem angieskich skrótów-->
+            <th>Nazwa sieci</th>
+            <th>Skrót</th>
+            <th>Opis</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Local Area Network</td>
+            <td>LAN</td>
+            <td>Sieci lokalne - sieci lączące użytkowników na niewielkim obszarze (pomieszczenie, budynek). W sieciach LAN prędkość przesyłania danych jest duża. Jej przykładem może być sieć szkolna.</td>
+        </tr>
+        <tr>
+            <td>Metropolitan Area Network</td>
+            <td>MAN</td>
+            <td>Sieci miejskie - sieci o zasięgu miasta, najcześciej szybkie. Umożliwiają połączenia między sieciami lokalnymi uczelni, ośrodków naukowych, organów administracji i centrów przemysłowych.</td>
+        </tr>
+        <tr>
+            <td>Personal Area Network</td>
+            <td>PAN</td>
+            <td>Sieci osobiste - sieci o zasięgu kilku metrów wykorzytsywane np. do bezprzewodowego połączenia telelfonu komurkowego z słuchawką, komputera z myszką lub klawiaturą.</td>
+        </tr>
+        <tr>
+            <td>Wide Area Network</td>
+            <td>WAN</td>
+            <td>Sieci rozległe - sieci, których zasięg przekracza granice miast, państw i kontynentów. Skłądają się z wezłów i łaczących je łączy transmisyjnych, realizowanych za pomocą publicznej sieci komunikacyjnej, np. telefonicznej, kanałów satelitarnych, radiowych. Dostęp do sieci rozległej uzyskuje się przez dołaczenie komputerów lub sieci lokalnych do węzłów sieci. Przykładem sieci rozległej jest internet.</td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+    
+    <div>
+        <h3><b><a id="urzadzenia">Urządzenia transmisji danych</a></b></h3>
+    <p>Są to nośniki używane do transportu sygnałów biegnących przez sieć do ich miejsc docelowych.</p>
+    <center><img src="miedziany.png" width="500" height="300"></center>
+    <a><center>Kabel miedziany</center></a>
+    <center><img src="koncentryk.png" width="500" height="300"></center>
+    <a><center>Kabel koncentryczny</center></a>
+    <center><img src="swiatlowod.png" width="500" height="300"></center>
+    <a><center>Kabel światłowodowy</center></a>
+    <center><img src="faleradiowe.png" width="500" height="300"></center>
+    <a><center>Fale radiowe</center></a>
+    </div>
+    
+    <div>    
+    <h3><b><a id="protokoly">Protokoły</a></b></h3>
+    <p>Określają sposoby komunikowania się urządzeń.<i>Poniżej przedstawiono i opisano wybrane.</i></p>
+    <h4>IP</h4>
+    <p><i>(Internet Protocol)</i> jest odpowiedzialny za przesyłanie pakietów między użytkownikami sieci. Jest protokołem bezpołączeniowym, co oznacza, że w trakcie transmisji nie sprawdza się poprawności pakietów przesyłanych przez sieć. Nie ma zatem gwarancji ich dostarczenia, ponieważ mogą one zostać po drodze zagubione lub uszkodzone.</p>
+    
+    <h4>FTP</h4>
+    <p><i>(File Transfer Protocol)</i> Jest wykorzystywany do przesyłania plików w sieci.</p>
+    
+    <h4>DNS</h4>
+    <p><i>(Domain Name System)</i>Używany jest do zamiany nazw domenowych na adresy IP.</p>
+    </div>
+
+    <div>
+    <h3><b><a id="oprogramowanie">Oprogramowanie komunikacyjne</a></b></h3>
+    <p>Korzysta ono z protokołów i sterowników do wymiany danych. Są to np. programy do udostępniania zasobów, programy przesyłania plików, programy do obsługi poczty elektronicznej, przeglądarki internetowe, itp.</p>
+    </div>
+    
+    <div id="tabela2">
+      <caption><b><a id="jednostki">Jednostki szybkości transmisji danych</a></b></caption>    
+       <table>
+       <thead>
+           <th>Jednostka</th>
+           <th>Przeliczenie</th>
+           <th>Nazwa</th>
+       </thead>
+       <tbody>
+           <tr>
+               <td>b/s (bps)</td>
+               <td>1 b/s</td>
+               <td>bity na sekundę</td>
+           </tr>
+            <tr>
+               <td>kb/s (kbps)</td>
+               <td> 1000 b/s</td>
+               <td>kilobity na sekundę</td>
+           </tr>
+            <tr>
+               <td>Mb/s (Mbps)</td>
+               <td> 1000000 b/s</td>
+               <td>megabity na sekundę</td>
+           </tr>
+            <tr>
+               <td>Gb/s (Gbps)</td>
+               <td>1000000000000 b/s</td>
+               <td>gigabity na sekundę</td>
+           </tr>
+       </tbody>
+        </table>
+    </div>
+    
+    <div>
+    <h3><b><a id="modem">Modem</a></b></h3>
+    <p><i><!--(MOdulator DEModulator)</i> to urządzenie, które zamienia cyfrowe dane, generowane przez komputer, na sygnały analogowe i wysyła je za pomocą sieci. Podczas odbierania danych z sieci sygnały analogowe są zamieniane na cyfrowe i przekazywane do komputera. Modem może być wykorzystywany do połaczenia komputera lub sieci LAN z Internmetem za pośrednictwem stacjonarnej linii telelfonicznej lub do przesyłania danych pomiędzy sieciami LAN. Zaletą modemu jest powszechna dostępność do usługi. Modemy sa stosowane również w sieciach telewizji kablowej i telelfonii komórkowej. Między innymi modem znajduje się w routerach.--></p>
+    <center><img id="modem" src="modem.png" width="500" height="300"></center>
+    
+    </div>
+
+    <div>
+    <h3><b><a id="karta">Karta sieciowa</a></b></h3>
+    <p><i>(Network Interface Card)</i>to urządzenie łączace komputer z lokalna sieci.a komputerową. Głównym zadaniem karty sieciowej jest przekształcanie ramek danych w sygnały, które sa przesyłane w sieci komputerowej. Karta sieciowa w standradzie <b>Ethernet</b> ma unikatowy w skali światowej <b>adres fizyczny</b> MAC <i>(MAC adress)</i>, przyporządkowany jej podczas produkcji i zapisany w pamięci ROM. karty mogą pracowac z rónymi prędkościami. Obecnie standardem w przypadku sieci przewodowych są karty sieciowe pracujące z prędkością 100 Mb/s lub 1 Gb/s. W bezprzewodowych kartach sieciowych do przesyłania danych wykorzystywane są fale radiowe. Karta sieciowa może być wlutowana w płytę główną komputera lub innego urządzenia, albo montowana w różnych odmianach złaczy PCI, PCMCIA, ExpressCard, USB, PCIExpress.</p>
+    <center><img id="kartasieciowa" src="kartasieciowa.png" width="500" height="300"></center>
+    </div>
+
+    <div>
+    <h3><b><a id="symbole">Symbole graficzne urządzeń sieciowych</a></b></h3>
+    <center><img src="symbole.png" width="500" height="300"></center>
+    <center><img src="symbole1.png" width="500" height="300"></center>
+    </div>
+    
+    <div>
+    <h3><b><a id="topologie=">Topologie (4 wybrane)</a></b></h3>
+    <h4>Topologia magistrali</h4>
+    <p>W topologii magistrali wszytskie węzły sieci są połaczone ze sobą za pomocą pojedyńczego kabla koncentrycznego, który obsługuje tylko jeden kanał i nosi nazwę magistrali. Węzły są dołaczane do wspólnej magistrali za pomocą "trójników", w sposób charakterystyczny dla sieci równorzędnej. Oba końce magistrali musza być zakończone elementami ograniczającymi, zwanymi <b>terminatorami</b>, które chronią przed odbiciami sygnału. magistrala nie jest obsługiwane przez żadne urządzenia zewnętrzne, a więc wszystkie urządzenia przyłączone do sieci słuchają transmisji przesyłanych magistralą i odbierają pakiety do nich zaadresowane. Topologia ta była stosowana w małych sieciach.<br>
+    Zaletami magistali są: krótkie odcinki kabla użyte do budowy sieci, brak konieczności stosowania dodatkowych urządzeń i łatwośc przyłączenia nowego urządzenia. Wadą magistrali jest trudna lokalizacja uszkodzenia kabla. Możliwa jest tylko transmisja w danym momencie, a awaria kabla możespowodować podział sieci na 2 segmenty lub unieruchomienie całej sieci.</p>
+    <center><img id="magistrala" src="magistrala.png" width="500" height="300"></center>
+    <h4>Topologia pierścienia</h4>
+    <p>W topologi pierścienia każda przyłączona do sieci stacja robocza ma dwa połaczenia - po jednym do każdego ze swoich najbliższych sąsiadów. Połaczenie takie tworzy fizyczną pętlę, czyli pierścień. Dane są przesyłane wokół pierścienia w jednym kierunku. Każda stacja robocza działa podobnie jak wzmacniak, pobierając i odpowiadając na pakiety do niej zaadresowane, a także przesyłając pzoostałe pakiety  do następnej stacji roboczej. Im więcej urządzeń jest przyłaczonych do pierścienia, tym czas odpowiedzi jest dłuższy. Czas ten można jednak określić, co nie jest możliwe w przypadku innych topologi.<br>
+    Wadą pierścienia jest to, zę awaria pojedyńczego przewodu lub komputera powoduje problemy z działaniem sieci. problemy te można jednka rozwiązać stosując podwójny pierścień lub układy obejściowe.</p>
+    <center><img id="pierscien" src="pierscien.png" width="500" height="300"></center>
+    <h4>Topologia gwiazdy</h4>
+    <p>W topologi gwiazdy połaczenia rozchodzą sięz centralnego punktu, którym może być koncentrator lub przełącznik. Każde urządzenie przyłączone do sieci może uzyskiwać dostęp do współdzielonego nośnika. Zaletami topologi gwiazdy jest duża przepustowośc i łatwa lokalizacja uszkodzeń. W przypadku awarii łącza lub komputera pozostała częśc sieci pracuje bez zakłóceń. Wadą jest większe zapotrzebowanie na kable oraz konieczność stosowania koncentratorów lub przełączników, kórych awaria może unieruchomić całą sieć. Topologia gwiazdy dominuje dominuje we współczesnych sieciach LAN. Są one elastyczne, skalowalne i stosunkowo tanie.</p>
+    <center><img id="gwiazda" src="gwiazda.png" width="500" height="300"></center>
+    <h4>Topologia rozgałęzionej gwiazdy</h4>
+    <p>Topologia rozgałęzionej gwiazdy oparta jest na topologii gwiazdy. Pojedyńcze gwiazdy są połaczone za pomocą koncentratorów lub przełaczników. Topologia ta jest stosowana w przypadku dużych sieci, gdy obszar, któryma być pokryty siecią, jest większy niż pozwala na to topologia gwiazdy. Zaletą topologii rozgałęzionej gwiazy jest ograniczenie liczby urządzęń, które musza być połaczone z centralnym węzłem oraz możliwość ograniczania ruchu lokalnego do pojedyńczej gwiazdy.</p>
+    <center><img id="rozszerzonagwiazda" src="rozszerzonagwiazda.png" width="500" height="300"></center>
+    </div>
+    
+    <div id="stopka">
+    <h5><b><a id="bibliografia">Bibliografia</a></b></h5>
+    Wszytskie definicje zostały wzięte z podręcznika: <i>Projektowanie i wykonywanie lokalnej sieci komputerowej WSiP</i><br>
+    Wszytskie obrazy na stonie pochodzą z <i>Google Grafika</i><br>
+    <hr>
+    Stronę stworzyła: Sandra Korcz  kl. 3 TE/TI<br>
+    <i>All rights reserved ©</i><br>
+    Wrzesień 2018
+    </div>
+    <br>
+    <fieldset><a href="#powrot">Powrót do góry</a></fieldset>
+    <br>
+</body>
+</html>

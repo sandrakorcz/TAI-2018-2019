@@ -1,0 +1,109 @@
+body {
+    background-color: #fafafa;
+    font-family: arial, verdana;
+}
+
+#baner {
+    height: 25%;
+    text-align: center;
+    font-size: 100px;
+    font-family: arial, verdana;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#menu {
+    height: 50%;
+    width: 25%;
+    float: left;
+}
+
+#tresc {
+    height: 50%;
+    width: 75%;
+    float: left;
+}
+
+#stopka {
+    height: 25%;
+    width: 100%;
+    float: left;
+}
+
+table {
+    width: auto;
+    background-color: #d2f4d2;
+}
+
+th, td {
+    padding: 7px 10px 10px 10px;
+    text-align: center;
+}
+
+th {
+   text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 90%;
+    border-bottom: 2px solid #000000;
+    border-top: 1px solid #000000;
+    text-align: left;
+}
+
+td {
+    border-bottom: 1px solid #000000;
+}
+
+td:hover {
+    background-color: #e7fae7;
+    color: cadetblue;
+}
+
+#stopka {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: #4b9d82;
+}
+
+a:hover {
+    color: chartreuse;
+}
+
+a:active {
+    color: greenyellow;
+}
+
+p {
+    text-align: justify;
+}
+
+#tabela1 {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#tabela2 {
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+img {
+    border: 2px solid;
+    border-color: cadetblue;
+}
+
+fieldset {
+    text-align: center;
+    width: auto;
+    height: 10px;
+    background-color: #e7fae7;
+    border: 1px solid black;
+}
