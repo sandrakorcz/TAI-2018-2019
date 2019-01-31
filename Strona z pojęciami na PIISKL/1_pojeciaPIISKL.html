@@ -12,25 +12,25 @@
         alert("Uwaga! Fantastyczna strona o sieciach!");
         alert("Na tej stonie znajduje się parę przydatnych pojęć na temat sieci komputerowych. Miłej lektury! :) ");
     </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+       $("button").click(function(){
+          $("div").fadeTo("fast",0.8)
+       }); 
+    });
+    </script>
      <script type="text/javascript">
-        $(document).ready(function(){ 
-        $("#wyswietl").click(function(){
-           $("modem").after("<p>(MOdulator DEModulator)</i> to urządzenie, które zamienia cyfrowe dane, generowane przez komputer, na sygnały analogowe i wysyła je za pomocą sieci. Podczas odbierania danych z sieci sygnały analogowe są zamieniane na cyfrowe i przekazywane do komputera. Modem może być wykorzystywany do połaczenia komputera lub sieci LAN z Internmetem za pośrednictwem stacjonarnej linii telelfonicznej lub do przesyłania danych pomiędzy sieciami LAN. Zaletą modemu jest powszechna dostępność do usługi. Modemy sa stosowane również w sieciach telewizji kablowej i telelfonii komórkowej. Między innymi modem znajduje się w routerach.</p>");
-            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>");
-            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>");
-            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>");
-            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>");
-            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>");
-            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>");
-            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>");
-            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>");
-            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>");
-            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>");
-            $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>"); 
-        }); 
-        $("#usun").click(function(){
-           $("p").remove();
-        });
+         $(document).ready(function(){
+                $("#ciekawostki1").mouseup(function(){
+                    alert("1. Emotikony mają ponad trzydzieści lat! Pierwszą powszechnie używaną emotikoną był symbol :-), mający w zamyśle podkreślać żartobliwy wydźwięk wypowiedzi. Za jego twórcę uważa się amerykańskiego informatyka Scotta Fahlmana, który wykorzystał tę buźkę w wiadomości wysłanej do internetu w 1982 roku. 2. Nigdy nie obejrzysz całego YouTubea! W przeciągu każdej minuty, w serwisie YouTube pojawia się około stu godzin nowego materiału wideo. Oznacza to, że na obejrzenie wszystkich filmów umieszczonych na stronie jednego tylko dnia, trzeba by było przeznaczyć ponad szesnaście lat. 3. Pierwsza strona internetowa wciąż jest w sieci! Nadal można wejść na stworzoną w szwajcarskim ośrodku CERN, pierwszą stronę internetową. Witryna nie była dostępna przez wiele lat, ale w zeszłym roku udało się ją odzyskać i przywrócić.4. Internet ponad chmurami. Podczas wspinaczki na Mount Everest, można korzystać z szybkiego internetu w standardzie LTE. Co więcej, sieć działa nawet nawet na szczycie najwyższej góry świata!5. Kamerka internetowa powstała dzięki... kawie! Pierwsza w historii kamera internetowa została zamontowana w 1991 roku przy ekspresie do kawy w Uniwersytecie Cambridge. Pracownicy placówki mogli dzięki niej podglądać, czy ich napój już się zaparzył. Urządzenie, które rejestrowało obraz w rozdzielczości 128x128 pikseli, podłączono do sieci w 1993 roku. Osiem lat później, słynny ekspres został sprzedany na aukcji internetowej za około 17 000 złotych. ");
+                });
+            });
+    </script>
+    <script type="text/javascript">
+         $(document).ready(function(){
+                $("#ciekawostki2").mouseup(function(){
+                    alert("6. Ile osób ma dostęp do sieci? Jeszcze w tym roku, dostęp do internetu będą miały trzy miliardy osób, czyli niemal połowa populacji naszej planety. 2,4 miliarda skorzysta z niego również za pomocą urządzeń mobilnych.7. Klucze do internetu. Brzmi to wręcz nieprawdopodobnie: siedem starannie wybranych osób z całego świata posiada tak zwane klucze do internetu - elektroniczne karty zawierające część szyfru, który pozwala dosłownie zrestartować internet. W przypadku globalnego ataku hakerskiego, strażnicy zostaną wezwani do bazy wojskowej znajdującej się na terenie Stanów Zjednoczonych. Gdy aktywują tam swoje klucze, sieć zostanie wyłączona.8. Początek uciążliwych reklam...Pierwszy baner reklamowy pojawił się w sieci w 1994 roku jako część kampanii telekomunikacyjnego giganta, firmy AT&T.9. Szybka popularność:Po czterech latach od wynalezienia internetu, korzystało z niego już 50 milionów osób. Zdobycie takiej samej publiczności zajęło telefonowi 75 lat, radiu 38 lat, telewizji 13 lat, a grze Angry Birds... 35 dni.10. Tony spamu...Na świecie działają cztery miliardy skrzynek emailowych. Każdego dnia wysyłanych jest z nich 190 miliardów wiadomości. Według analiz, aż 80% z tej liczby może stanowić spam.");
+                });
             });
     </script>
 </head>
@@ -53,7 +53,12 @@
         <a href="#karta">Karta sieciowa</a><br>
         <a href="#symbole">Symbole graficzne urządzeń sieciowych</a><br>
         <a href="#topologia">Topologie</a><br>
-        <a href="#bibliografia">Bibliografia</a>
+        <a href="#bibliografia">Bibliografia</a><br>
+        <a href="#ciekawostki">Ciekawostki</a>
+        <br>
+        <br>
+        <br>
+        <button>Zmień nasycenie kolorów strony do 80%</button>
 
     </div>
     
@@ -161,8 +166,10 @@
     
     <div>
     <h3><b><a id="modem">Modem</a></b></h3>
-    <p><i><!--(MOdulator DEModulator)</i> to urządzenie, które zamienia cyfrowe dane, generowane przez komputer, na sygnały analogowe i wysyła je za pomocą sieci. Podczas odbierania danych z sieci sygnały analogowe są zamieniane na cyfrowe i przekazywane do komputera. Modem może być wykorzystywany do połaczenia komputera lub sieci LAN z Internmetem za pośrednictwem stacjonarnej linii telelfonicznej lub do przesyłania danych pomiędzy sieciami LAN. Zaletą modemu jest powszechna dostępność do usługi. Modemy sa stosowane również w sieciach telewizji kablowej i telelfonii komórkowej. Między innymi modem znajduje się w routerach.--></p>
+    <p><i>(MOdulator DEModulator)</i> to urządzenie, które zamienia cyfrowe dane, generowane przez komputer, na sygnały analogowe i wysyła je za pomocą sieci. Podczas odbierania danych z sieci sygnały analogowe są zamieniane na cyfrowe i przekazywane do komputera. Modem może być wykorzystywany do połaczenia komputera lub sieci LAN z Internmetem za pośrednictwem stacjonarnej linii telelfonicznej lub do przesyłania danych pomiędzy sieciami LAN. Zaletą modemu jest powszechna dostępność do usługi. Modemy sa stosowane również w sieciach telewizji kablowej i telelfonii komórkowej. Między innymi modem znajduje się w routerach.</p>
     <center><img id="modem" src="modem.png" width="500" height="300"></center>
+    <!--<button id="wyswietl">Wyświetl opis</button>
+    <button id="usun">Usuń opis</button>-->
     
     </div>
 
@@ -194,7 +201,14 @@
     <h4>Topologia rozgałęzionej gwiazdy</h4>
     <p>Topologia rozgałęzionej gwiazdy oparta jest na topologii gwiazdy. Pojedyńcze gwiazdy są połaczone za pomocą koncentratorów lub przełaczników. Topologia ta jest stosowana w przypadku dużych sieci, gdy obszar, któryma być pokryty siecią, jest większy niż pozwala na to topologia gwiazdy. Zaletą topologii rozgałęzionej gwiazy jest ograniczenie liczby urządzęń, które musza być połaczone z centralnym węzłem oraz możliwość ograniczania ruchu lokalnego do pojedyńczej gwiazdy.</p>
     <center><img id="rozszerzonagwiazda" src="rozszerzonagwiazda.png" width="500" height="300"></center>
-    </div>
+        </div>
+        <div>
+           <h3><b><a id="ciekawostki">Ciekawostki</a></b></h3>
+           <p id="ciekawostki1">Aby poznać pierwszych 5 ciekawostek na temat internetu kliknij na to zdanie.</p>
+           <p id="ciekawostki2">Aby poznać kolejnych 5 ciekawostek na temat internetu kliknij na to zdanie.</p>
+           
+            
+        </div>
     
     <div id="stopka">
     <h5><b><a id="bibliografia">Bibliografia</a></b></h5>
@@ -208,5 +222,10 @@
     <br>
     <fieldset><a href="#powrot">Powrót do góry</a></fieldset>
     <br>
+<script type="text/javascript">
+        var data_czas = new Date();
+        
+        document.write("Data i czas: <b>"+data_czas+"</b><br>");
+    </script>
 </body>
 </html>
