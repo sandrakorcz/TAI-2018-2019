@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 16</title>
+     <meta http-equiv="Content-Script-Type" content="text/javascript">
+</head>
+<body>
+    <script type="text/javascript">
+        var waluta=" zł";
+        var ZamowionaLiczba=prompt("Ile sztuk zamawiasz?","0");
+        document.write("Cena za 1 sztukę to: ");
+        document.write(CenaZaSztuke=(ZamowionaLiczba<100)?9.99:8.99);
+        document.write(waluta);
+    </script>
+</body>
+</html>

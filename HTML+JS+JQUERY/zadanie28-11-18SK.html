@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadania 28.11.2018</title>
+    <script type="text/javascript">
+        function size() {
+          /*if (document.getElementById("tekst").onMouseOver==true) {*/
+              var wielkosc = document.getElementById("tekst");
+            wielkosc.style.fontSize="50px";
+/*            } else {
+               wielkosc.style.fontSize="16px";
+            }*/
+        } //Mimo walki nie udało się zmnijszyc z powrotem czcionki do normlanej wielkości. W komenatrzu jest próba zrobienia tego. Myśle, ze problem tkwi w warunkach jednak sama nie potrafię go rozwiązać. Mogłam zrobić łatwiejszym (a raczej gotowym) sposobem z css'em, jednak nie chciałam iśc na łatwiznę.
+        function resize() {
+            var normalny = document.getElementById("tekst");
+            normalny.style.fontSize="16px";
+        }
+    </script>
+
+</head>
+<body onmousedown="getEventType(event)">
+    <script type="text/javascript">
+       /* function dzieki()
+       {
+            alert("Dzięki!")
+        }*/
+        document.write("podziękowanie")
+    </script>
+    <p onClick="this.innerHTML='Dziękuję!'">Kliknij tekst!</p>
+    <hr>
+    <p onMouseOver="size()" onmouseout="resize()" id="tekst">Najedź na ten tekst i zobacz jak się powiększa.</p>
+    <hr>
+</body>
+</html>

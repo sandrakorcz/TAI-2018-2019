@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 9</title>
+     <meta http-equiv="Content-Script-Type" cpntent="text/javascript">
+</head>
+<body>
+    <script type="text/javascript">
+        function funkcja() {
+            var x=document.getElementById("znak");
+            x.value=x.value.toUpperCase();
+        }
+    </script>
+    Wpisz swoje imię: <input type="text" id="znak" onkeypress="funkcja()">
+</body>
+</html>

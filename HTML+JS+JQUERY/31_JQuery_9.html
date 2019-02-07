@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery 9</title>
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link src="https://github.com/daneden/animate.css.git">
+    <script type="text/javascript">
+    $(document).ready(function(){
+       $("button").click(function(){
+          $("#div1").fadeTo("fast",0.1); 
+          $("#div2").fadeTo("slow",0.2); 
+          $("#div3").fadeTo("6000",0.4); 
+       }); 
+    });
+    </script>
+</head>
+<body>
+   <h1>Teraz będę teksty pisać</h1>
+   <div id="div1">
+       <h2>Taki sobie teścik</h2>
+       <p>I jeszcze jeden</p>
+   </div>
+    <div id="div2">
+       <h2>Taki sobie teścik</h2>
+       <p>I jeszcze jeden</p>
+   </div>
+    <div id="div3">
+       <h2>Taki sobie teścik</h2>
+       <p>I jeszcze jeden</p>
+   </div>
+    <button>Przezroczystość</button>
+</body>
+</html>

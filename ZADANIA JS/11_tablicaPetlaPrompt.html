@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 11</title>
+     <meta http-equiv="Content-Script-Type" content="text/javascript">
+</head>
+<body>
+    <script type="text/javascript">
+        var rozmiarTablicy=prompt("Podaj rozmiar tablicy:","0");
+        var jedzenie1=Array(rozmiarTablicy);
+        for (i=0; i<rozmiarTablicy; i++) {
+            jedzenie1[i]=prompt("Podaj zawartośc komórki "+[i]+":","0");
+        }
+        for (i=0;i<rozmiarTablicy;i++) {
+            document.write(jedzenie1[i]);
+            document.write(", ");
+        }
+    </script>
+</body>
+</html>

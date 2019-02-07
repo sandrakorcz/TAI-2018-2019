@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 1</title>
+     <meta http-equiv="Content-Script-Type" content="text/javascript">
+      <script type="text/javascript">
+        function licz(formularz) {
+            if (formularz.a.value==" "|formularz.h.value==" "|formularz.b.value==" "|formularz.c.value==" ");
+            else {
+                a=formularz.a.value;
+                b=formularz.b.value;
+                c=formularz.c.value;
+                h=formularz.h.value;
+                formularz.pt.value=a*h/2;
+                formularz.ot.value=a+b+c;
+                formularz.pp.value=a*b;
+                formularz.op.value=2*a+2*b;
+                formularz.pk.value=a*a;
+                formularz.ok.value=4*a;
+            }
+        }
+         
+    </script>
+</head>
+<body>
+ <form name="formularz1" action="">
+        Podaj bok a: <input type="text" name="a"><br><br>
+        Podaj bok b: <input type="text" name="b"><br><br>
+        Podaj bok c: <input type="text" name="c"><br><br>
+        Podaj wysokość: <input type="text" name="h"><br><br>
+        <input type="button" value="Oblicz" onClick="licz(this.form)"><br><br>
+        Wynik: <br><br>
+        Pole trójkąta: <input type="text" name="pt"><br><br>
+        Obwód trójkąta: <input type="text" name="ot"><br><br>
+        Pole prostokąta: <input type="text" name="pp"><br><br>
+        Obwód prostokąta: <input type="text" name="op"><br><br>
+        Pole kwadratu: <input type="text" name="pk"><br><br>
+        Obwód kwadratu: <input type="text" name="ok"><br><br>
+    </form>
+</body>
+</html>

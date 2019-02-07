@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery 7</title>
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link src="https://github.com/daneden/animate.css.git">
+    <script type="text/javascript">
+        $(document).ready(function(){ 
+        $("#wyswietl").click(function(){
+           $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>"); 
+        }); //after sprawia, że tekst pojawi się pod obrazkiem
+        $("#usun").click(function(){
+           $("p").remove(); //tym usuwam akapit z widoku w oknie przeglądarki 
+        });
+            });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $("#usun1").click(function(){
+              $("#div1").empty(); 
+           });
+        });
+    </script>
+</head>
+<body>
+    <img src="LWrwN01ZtxGP_25002.jpg"><br>
+    <button id="wyswietl">Wyświetl opis</button>
+    <button id="usun">Usuń opis</button>
+    <hr>
+    <div id="div1" style="height: 77px;width: 300px;border: 1px solidblack;background-color: cadetblue;">
+        <table border>
+            <tr>
+                <td style="background-color: crimson">Komórka tabeli z tłem kolorowym</td>
+                <td style="background-color: rosybrown">Komórka tabeli z tłem kolorowym</td>
+            </tr>
+               <tr>
+                <td style="background-color: darkseagreen">Komórka tabeli z tłem kolorowym</td>
+                <td style="background-color: paleturquoise">Komórka tabeli z tłem kolorowym</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <button id="usun1">Usuń tabelę</button>
+</body>
+</html>

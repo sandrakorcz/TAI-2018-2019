@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pozycja kursora itp</title>
+    <meta http-equiv="Content-Script-Type" cpntent="text/javascript">
+</head>
+<body>
+    <script type="text/javascript">
+        function wspolrzedne_kursora(event) //funkcja, która odczytuje współrzędne
+        {
+            var x=event.clientX//właściwość, która zwraca współrzędną poziomą
+            var y=event.clientY //właściwość, która zwraca współrzędną poziomą
+            alert("Współrzędna X: " +x+ ", współrzędna Y: " +y)
+        }
+    </script>
+    <p onmousedown="wspolrzedne_kursora(event)">Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.Kliknij TU. I TU. I TU.</p>
+    <hr>
+    <script type="text/javascript">
+        document.write("Chcesz mi coś powiedzieć?");
+    </script>
+    <h1 onmouseenter="this.innerHTML='Wszyscy maja swoja rację'">Przesuń kursor nad napis.</h1>
+    <hr>
+    <script type="text/javascript">
+        function funkcja() {
+            var x=document.getElementById("znak");
+            x.value=x.value.toUpperCase();
+        }
+    </script>
+    Wpisz swoje imię: <input type="text" id="znak" onkeypress="funkcja()">
+    <hr>
+    <h1>Poniżej jest prostokąt</h1>
+    <script type="text/javascript">
+        function mysz_nad(obj) {
+            obj.innerHTML="Widzisz jakie czary?"
+        }
+        function mysz_na_zewn(obj) {
+            obj.innerHTML="Przesuń kursor nad prostokąt!"
+        }
+    </script>
+    <div onmouseover="mysz_nad(this)" onmouseout="mysz_na_zewn(this)" style="background-color: #EEEEEE;width: 200px;height: 20px;height: 20px;padding: 20px;">Przesuń kursor nad prostokąt</div>
+    <hr>
+    <script type="text/javascript">
+        document.write("<h1>tablica</h1>");
+        ludzie=["1Nazwisko","2Nazwisko","3Nazwisko","4Nazwisko"];//tworzy zawartośc tablicy
+        for (i=0;i<ludzie.length;i++) {
+            /*tym poleceniem określamy długośc tablicy, pętla będzie wykonywana dopóki wartość zmniennej i nie jest mniejsza od długości tablicy*/
+            document.write(ludzie[i]);
+            document.write("<br>");
+        }
+    </script>
+    <hr>
+    <script type="text/javascript">
+        document.write("<h1>Posiłki</h1>");
+        posilek=["śniadanie","obiad","kolacja"];
+        for (x=0;x<posilek.length;x++) {
+            document.write(posilek[x]);
+            document.write("&nbsp&nbsp&nbsp");//te znaki zastępują potrójką spację
+        }
+    </script>
+    <hr>
+    <script type="text/javascript">
+        var jedzenie = new Array(3) /*efekt ten sam, a zamiast tablicy sa trzy deklaracje zmiennych*/
+        jedzenie[0]="śniadanie"
+        jedzenie[1]="obiad"
+        jedzenie[2]="kolacja"
+        for (i=0;i<jedzenie.length;i++) {
+            document.write(jedzenie[i])
+            document.write("&nbsp&nbsp&nbsp")
+        }
+    </script>
+    <hr>
+    <script type="text/javascript">
+        var rozmiarTablicy=prompt("Podaj rozmiar tablicy:","0");/*uruchamiamy formularz*/
+        var jedzenie1=Array(rozmiarTablicy);/*pojawia się polecenie utworzenia tablicy o rozmiarze zdefiniowanym*/
+        for (i=0; i<rozmiarTablicy; i++) {
+            /*rozpoczyna się pętla-ilość powtórzeń jest zgodna z ilościa podana w prompcie*/
+            jedzenie1[i]=prompt("Podaj zawartośc komórki "+[i]+":","0");
+        }
+        for (i=0;i<rozmiarTablicy;i++) {
+            /*tu program wyświetla tablice w przeglądarce*/
+            document.write(jedzenie1[i]);
+            document.write(", ");
+        }
+    </script>
+    <hr>
+    <script type="text/javascript">
+        var zmienna1=prompt("Podaj liczbę 1:","0");
+        var zmienna2=prompt("Podaj liczbę 2:","0");
+        var wynik=new Boolean(zmienna1<zmienna2)
+        document.write("Liczba 1: ",zmienna1,"<br>")
+        document.write("Liczba 2: ",zmienna2,"<br>")
+        document.write("Sprawdźmy to: Liczba 1 < Liczba 2, zatem jest to ", wynik,"<br>")
+    </script>
+    <hr>
+    <script type="text/javascript">
+        var strefaczasowa = new Date()
+        var n = strefaczasowa.getTimezoneOffset(); /*metoda zwracająca różnicę czasu między UTC i czasem lokalnym*/
+        document.write("Różnica czasu wynosi ", n," minut")
+    </script>
+    <hr>
+    <script type="text/javascript">
+        var auto = {Marka:"Opel",Model:"Astra",Rocznik:"2014",Cena:"1zł"};
+        document.write(auto["Cena"]);
+    </script>
+</body>
+</html>

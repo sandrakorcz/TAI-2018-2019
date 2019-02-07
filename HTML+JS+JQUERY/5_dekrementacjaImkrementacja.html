@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Imkrementacja/Dekrementacja</title>
+</head>
+<body>
+    <script>
+        var x = 8;
+        var y = 10;
+        var z;
+
+        z=x+y;
+        //x++; //imkrementacja
+        y*=z;
+        //y--; //dekramentacja
+
+        document.write("x - "+x+", y - "+y+", z - "+z+"");
+    </script>
+    <hr>
+    <script>
+        var y = 12;
+        var z = 4;
+        var x;
+        var wynik = 48; //zrobić w domu! x(z+y)=48
+
+        wynik/=y+=z;
+        x=wynik;
+
+        document.write("X wynosi: " +x+ "<br>");
+    </script>
+    <hr>
+    <script> //(a+b)(c+d)=220
+        var a = 10;
+        var b = 12;
+        var c = 4;
+        var d;
+        var wynik2 = 220;
+
+        var e= a+b;
+        d=(wynik2/e)-c;
+        
+        document.write("D wynosi: " +d);
+        
+    </script>
+</body>
+</html>
