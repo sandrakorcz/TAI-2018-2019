@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zmiana tła</title>
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+      <link src="https://github.com/daneden/animate.css.git">
+    <script type="text/javascript">
+        $(document).ready(function(){ 
+        $("#wyswietl").click(function(){
+           $("h3").wrap("<div></div>"); 
+        });
+        $("#usun").click(function(){
+           $("h3").unwrap(); 
+        });
+            });
+    </script>
+    <style>
+        div {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+  <h1>Tło</h1>
+  <h2>blah</h2>
+  <h3>Nagłówek 1</h3>
+  gfdhdfjghndjsfgbesdgftjdsvcjmvdghzxvfdjseyhfvcsdegff
+  <h3>Nagłówek 2</h3>
+  dsfdzgdfhgfhfgbhgfmjkjikilookjpkjgfddgfaszfvddsgfdfh
+  <br>
+  <button id="wyswietl">Wyświetl</button>
+  <button id="usun">Usuń tło</button>
+</body>
+</html>

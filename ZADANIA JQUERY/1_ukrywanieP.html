@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Ukrywanie P</title>
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+           $("button").click(function(){
+                //$("p").hide();
+               $("p").slideToggle("slow");
+            });
+        });
+    </script>
+</head>
+<body>
+  <p>Treść do ukrycia</p>
+  <button>Ukryj/pokaż treść</button>
+</body>
+</html>

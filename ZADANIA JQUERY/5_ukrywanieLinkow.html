@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title> Ukrywanie linków</title>
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+        document.write("<h2>Linki</h2>")
+        
+        $(document).ready(function(){
+           $("#hide").click(function(){;
+            $("[href]").hide();
+        });
+        $("#show").click(function(){
+            $("[href]").show();
+        });
+        });
+    </script>
+</head>
+<body>
+ <ol>
+    <li><a href="http://www.wp.pl/">WP</a></li>
+  <li><a href="http://www.deon.pl/">Deon</a></li>
+ </ol>
+    <button id="hide">Ukryj linki</button>
+    <button id="show">Pokaż linki</button>
+</body>
+</html>

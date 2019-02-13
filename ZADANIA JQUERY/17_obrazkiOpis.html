@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Obrazki opis</title>
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+      <link src="https://github.com/daneden/animate.css.git">
+       <script type="text/javascript">
+        $(document).ready(function(){ 
+        $("#wyswietl").click(function(){
+           $("img").after("<p><I>To jest tekst, który będzie pod obrazkiem. Będzie sie pojawiał i znikał.</I></p>"); 
+        });
+        $("#usun").click(function(){
+           $("p").remove();
+        });
+            });
+    </script>
+</head>
+<body>
+   <img src="LWrwN01ZtxGP_25002.jpg"><br>
+    <button id="wyswietl">Wyświetl opis</button>
+    <button id="usun">Usuń opis</button>
+</body>
+</html>

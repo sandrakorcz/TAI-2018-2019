@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Blokada danych</title>
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+     <script type="text/javascript">
+        document.write("<h2>Stałe dane których uzytkownik zmieniac nie może.</h2>")
+        
+        $(document).ready(function(){
+            $(":enabled").css("background-color","lime");
+        });
+    </script>
+</head>
+<body>
+   <form action="">
+        Kupione elementy <input type="number" name="zmiana_stanu">szt.<br>
+        Identyfikator: <input type="text" name="id" disabled="disabled"><br>
+        Symbol elementu: <select disabled="disabled">
+            <option>UL7400</option>
+            <option>UL6400</option>
+            <option>UL5400</option>
+        </select><br>
+        <input type="reset" value="Wyczyść">
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+</html>

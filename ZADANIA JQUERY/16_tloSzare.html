@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Szare tło</title>
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+      <link src="https://github.com/daneden/animate.css.git">
+      <script type="text/javascript">
+          $(document).ready(function(){
+             $("input").focus(function(){
+                $(this).css("background-color","#bbbbbb");
+             });
+            $("input").blur(function(){
+               $(this).css("background-color","#eeeeee");
+            });  
+          });
+    </script>
+</head>
+<body>
+  Login: <input type="text" name="user"><br>
+  Hasło: <input type="text" name="pass"><br>
+  <button>Zapisz</button>
+</body>
+</html>

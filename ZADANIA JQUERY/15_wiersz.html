@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Wiersz</title>
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+      <link src="https://github.com/daneden/animate.css.git">
+</head>
+<body>
+<ul>
+    <li>qwertyuiop</li>
+    <li>asdfghjkl</li>
+    <li>zxcvbnm</li>
+    <li>mnbvcxz</li>
+    <li>lkjhgfdsa</li>
+    <li>poiuytrewq</li>
+</ul>
+  <script type="text/javascript">
+    $("li").hover (
+    function(){
+        $(this).append($("<I>Pisano na klawiaturze</I>"));
+    }, function(){
+        $(this).find("I:last").remove();
+    });
+</script>
+</body>
+</html>

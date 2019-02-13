@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Znikanie przystawki</title>
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+    document.write("<h2>MENU</h2>")
+    $(document).ready(function() {
+        $("button").click(function(){
+            $("ul li:first").hide();
+            $(this).hide();
+    })    
+    })    
+    </script>
+</head>
+<body>
+    <p>Przystawki</p>
+    <ul>
+        <li>chleb czosnkowy</li>
+        <li>zupa kalafiorowa</li>
+    </ul>
+    <p>Dania ciepłe</p>
+    <ul>
+        <li>wątróbka</li>
+        <li>flaki z dzika</li>
+    </ul>
+    <p>Desery</p>
+    <ul>
+        <li>krem czekoladowy</li>
+        <li>lody truskawkowe</li>
+    </ul>
+    <button>Usuń "Polecamy!!!"</button>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Tłumaczenie</title>
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+      <link src="https://github.com/daneden/animate.css.git">
+      <script type="text/javascript">
+    $(document).ready(function(){
+       $("button").click(function(){
+          $("p").remove(".ang"); 
+       }); 
+    });
+</script>
+</head>
+<body>
+  <p>Hello!</p>
+  <p class="ang"><i>Cześć!</i></p>
+  <p>Thank you!</p>
+  <p class="ang"><i>Dziękuję!</i></p>
+  <button>Ukryj tłumaczenie</button>
+</body>
+</html>
